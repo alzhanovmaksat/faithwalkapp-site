@@ -1,50 +1,620 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.4">
-  <style type="text/css">
-    body {background-color: #f5f3ef}
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 64.0px '.Apple Color Emoji UI'; color: #212121; -webkit-text-stroke: #212121}
-    p.p3 {margin: 0.0px 0.0px 40.0px 0.0px; text-align: center; font: 18.0px 'Helvetica Neue'; color: #573b77; -webkit-text-stroke: #573b77}
-    p.p4 {margin: 0.0px 56.0px 40.0px 56.0px; text-align: center; text-indent: -56.0px; font: 16.0px 'Helvetica Neue'; color: #343434; -webkit-text-stroke: #343434}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 24.0px '.Apple Color Emoji UI'; color: #212121; -webkit-text-stroke: #212121}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #343434; -webkit-text-stroke: #343434}
-    p.p8 {margin: 0.0px 0.0px 16.0px 0.0px; text-align: center; font: 16.0px 'Helvetica Neue'; color: #343434; -webkit-text-stroke: #343434}
-    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 18.0px 'Helvetica Neue'; color: #573b77; -webkit-text-stroke: #573b77}
-    p.p10 {margin: 0.0px 0.0px 16.0px 0.0px; text-align: center; font: 14.0px 'Helvetica Neue'; color: #757575; -webkit-text-stroke: #757575}
-    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 14.0px 'Helvetica Neue'; color: #757575; -webkit-text-stroke: #757575}
-    span.s1 {font-kerning: none}
-    span.s2 {font-kerning: none; color: #141414; -webkit-text-stroke: 0px #141414}
-    span.s3 {font-kerning: none; background-color: #ffffff}
-    span.s4 {font: 14.0px 'Helvetica Neue'; font-kerning: none; color: #757575; -webkit-text-stroke: 0px #757575}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MyFaithWalk — Walk with God. Every day.</title>
+<meta name="description" content="MyFaithWalk is your daily companion for devotionals, prayer tracking, faith journaling, guided rest, and faith-centered conversations. Download on the App Store and Google Play.">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/icon-512.png">
+<meta property="og:title" content="MyFaithWalk — Walk with God. Every day.">
+<meta property="og:description" content="Daily devotionals, prayer tracking, faith journaling, and guided rest — one peaceful app.">
+<meta property="og:image" content="https://faithwalkapp.com/assets/icon-512.png">
+<meta property="og:url" content="https://faithwalkapp.com/">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "MyFaithWalk",
+  "operatingSystem": "iOS, Android",
+  "applicationCategory": "LifestyleApplication",
+  "description": "Daily devotionals, prayer tracking, faith journaling, and guided rest — one peaceful app to help you draw closer to God.",
+  "author": { "@type": "Organization", "name": "Alzhan Group LLC", "url": "https://alzhangroupllc.com/" },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "installUrl": "https://apps.apple.com/us/app/myfaithwalk/id6759456976"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Is MyFaithWalk free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — the app is free to download, and the core daily experience is free: daily devotionals, prayer tracker, favorite verses, and journaling. An optional Premium subscription unlocks the full experience." } },
+    { "@type": "Question", "name": "What does Premium include?", "acceptedAnswer": { "@type": "Answer", "text": "Premium unlocks unlimited journal entries, the Faith Chat companion, Rest & Renewal with guided breathing and ambient sounds, devotionals read aloud, full calendar history, and all future features." } },
+    { "@type": "Question", "name": "What languages does the app support?", "acceptedAnswer": { "@type": "Answer", "text": "MyFaithWalk is fully available in English and Spanish, including the daily devotionals." } },
+    { "@type": "Question", "name": "Is my journal private?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Journal entries and prayer requests are stored privately on your device." } },
+    { "@type": "Question", "name": "How do I manage or cancel my subscription?", "acceptedAnswer": { "@type": "Answer", "text": "Subscriptions are handled by Apple and Google — manage or cancel anytime in your App Store or Google Play subscription settings." } }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --purple: #6B4F8A;
+    --purple-light: #9575B5;
+    --purple-soft: #B598D0;
+    --purple-deep: #3D2E50;
+    --cream: #F7F5F2;
+    --cream-alt: #F0EDE8;
+    --ink: #2C2C2C;
+    --ink-soft: #6B6B6B;
+    --ink-muted: #9B9B9B;
+    --line: #E5E0DA;
+    --white: #FFFFFF;
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans);
+    color: var(--ink);
+    background: var(--cream);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
+  img { max-width: 100%; }
+  a { color: inherit; }
+
+  /* ── Scroll reveal ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity .9s cubic-bezier(.22,.61,.36,1), transform .9s cubic-bezier(.22,.61,.36,1);
+  }
+  .reveal.in { opacity: 1; transform: none; }
+  .reveal.d1 { transition-delay: .12s; }
+  .reveal.d2 { transition-delay: .24s; }
+  .reveal.d3 { transition-delay: .36s; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    * { animation: none !important; }
+    html { scroll-behavior: auto; }
+  }
+
+  /* ── Nav ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px clamp(20px, 5vw, 56px);
+    background: rgba(247,245,242,.82);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid transparent;
+    transition: border-color .3s;
+  }
+  nav.scrolled { border-bottom-color: var(--line); }
+  .nav-brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 17px; text-decoration: none; letter-spacing: -.01em; }
+  .nav-brand img { width: 34px; height: 34px; border-radius: 9px; box-shadow: 0 2px 8px rgba(61,46,80,.18); }
+  .nav-links { display: flex; align-items: center; gap: 26px; font-size: 14.5px; font-weight: 500; color: var(--ink-soft); }
+  .nav-links a { text-decoration: none; transition: color .2s; }
+  .nav-links a:hover { color: var(--purple); }
+  .nav-cta {
+    background: var(--purple); color: #fff !important; padding: 9px 18px; border-radius: 999px;
+    box-shadow: 0 4px 14px rgba(107,79,138,.32); transition: transform .2s, box-shadow .2s;
+  }
+  .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(107,79,138,.42); }
+  @media (max-width: 640px) { .nav-links a:not(.nav-cta) { display: none; } }
+
+  /* ── Hero ── */
+  header {
+    position: relative;
+    min-height: 100svh;
+    display: flex; align-items: center;
+    padding: 120px clamp(20px, 6vw, 72px) 60px;
+    background:
+      radial-gradient(900px 600px at 85% -10%, rgba(149,117,181,.22), transparent 60%),
+      radial-gradient(700px 500px at -10% 100%, rgba(107,79,138,.14), transparent 60%),
+      var(--cream);
+    overflow: hidden;
+  }
+  .hero-inner {
+    display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(32px, 6vw, 80px);
+    align-items: center; max-width: 1180px; margin: 0 auto; width: 100%;
+  }
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 13px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--purple); background: rgba(107,79,138,.09);
+    border: 1px solid rgba(107,79,138,.18);
+    padding: 7px 16px; border-radius: 999px; margin-bottom: 26px;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(44px, 6.2vw, 74px);
+    line-height: 1.06; font-weight: 600; letter-spacing: -.015em;
+    color: var(--purple-deep); margin-bottom: 22px;
+  }
+  h1 em { font-style: italic; color: var(--purple); }
+  .hero-sub {
+    font-size: clamp(16px, 1.6vw, 19px); color: var(--ink-soft);
+    max-width: 46ch; margin-bottom: 36px;
+  }
+  .store-badges { display: flex; gap: 14px; flex-wrap: wrap; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 12px;
+    background: var(--purple-deep); color: #fff; text-decoration: none;
+    padding: 12px 22px 12px 18px; border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(61,46,80,.28);
+    transition: transform .25s cubic-bezier(.22,.61,.36,1), box-shadow .25s;
+  }
+  .badge:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(61,46,80,.36); }
+  .badge svg { width: 26px; height: 26px; flex-shrink: 0; }
+  .badge .b-txt { line-height: 1.15; text-align: left; }
+  .badge .b-top { font-size: 10.5px; opacity: .75; letter-spacing: .04em; }
+  .badge .b-bot { font-size: 16.5px; font-weight: 600; letter-spacing: -.01em; }
+  .hero-note { margin-top: 22px; font-size: 13.5px; color: var(--ink-muted); }
+
+  /* ── Phone mockup ── */
+  .hero-phone-wrap { position: relative; display: flex; justify-content: center; }
+  .glow {
+    position: absolute; inset: -8% -18%;
+    background: radial-gradient(closest-side, rgba(149,117,181,.30), transparent 70%);
+    filter: blur(10px); z-index: 0;
+    animation: breathe 7s ease-in-out infinite;
+  }
+  @keyframes breathe { 0%,100% { opacity: .7; transform: scale(1);} 50% { opacity: 1; transform: scale(1.05);} }
+  .phone {
+    position: relative; z-index: 1;
+    width: clamp(250px, 24vw, 310px);
+    border-radius: 44px;
+    background: #14101b;
+    padding: 12px;
+    box-shadow: 0 30px 70px rgba(61,46,80,.38), 0 4px 14px rgba(61,46,80,.22), inset 0 0 0 2px rgba(255,255,255,.06);
+    animation: float 6.5s ease-in-out infinite;
+  }
+  @keyframes float { 0%,100% { transform: translateY(0) rotate(-.4deg);} 50% { transform: translateY(-16px) rotate(.4deg);} }
+  .phone-screen {
+    border-radius: 34px; overflow: hidden;
+    background: var(--cream); aspect-ratio: 9 / 19.2;
+    display: flex; flex-direction: column;
+    font-size: 11px;
+    text-align: left;
+  }
+  .phone .notch {
+    position: absolute; top: 22px; left: 50%; transform: translateX(-50%);
+    width: 34%; height: 22px; background: #14101b; border-radius: 999px; z-index: 3;
+  }
+  .ph-header {
+    background: linear-gradient(135deg, var(--purple), #7D63A0);
+    color: #fff; padding: 44px 18px 18px; border-radius: 0 0 24px 24px;
+  }
+  .ph-greet { font-size: 10px; opacity: .8; margin-bottom: 2px; }
+  .ph-title { font-family: var(--serif); font-size: 19px; font-weight: 600; }
+  .ph-streak {
+    margin-top: 12px; display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,.16); border-radius: 999px; padding: 5px 12px;
+    font-size: 10px; font-weight: 600;
+  }
+  .ph-body { padding: 14px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+  .ph-card {
+    background: #fff; border-radius: 16px; padding: 13px 14px;
+    box-shadow: 0 2px 10px rgba(61,46,80,.07); border: 1px solid var(--line);
+  }
+  .ph-tag { font-size: 8.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--purple-light); margin-bottom: 5px; }
+  .ph-verse { font-family: var(--serif); font-style: italic; font-size: 13.5px; line-height: 1.45; color: var(--ink); }
+  .ph-ref { margin-top: 6px; font-size: 9.5px; font-weight: 600; color: var(--purple); }
+  .ph-row { display: flex; align-items: center; gap: 9px; }
+  .ph-dot { width: 26px; height: 26px; border-radius: 9px; display: grid; place-items: center; font-size: 12px; background: var(--cream-alt); flex-shrink: 0; }
+  .ph-row-txt .t { font-size: 10.5px; font-weight: 600; }
+  .ph-row-txt .s { font-size: 9px; color: var(--ink-muted); }
+  .ph-tabbar {
+    display: flex; justify-content: space-around; padding: 10px 8px 16px;
+    background: #fff; border-top: 1px solid var(--line); font-size: 13px;
+  }
+  .ph-tabbar span { opacity: .38; } .ph-tabbar span.on { opacity: 1; }
+
+  /* ── Sections ── */
+  section { padding: clamp(72px, 10vw, 130px) clamp(20px, 6vw, 72px); }
+  .wrap { max-width: 1180px; margin: 0 auto; }
+  .sec-eyebrow { font-size: 12.5px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--purple-light); margin-bottom: 14px; }
+  h2 { font-family: var(--serif); font-size: clamp(32px, 4vw, 48px); font-weight: 600; line-height: 1.12; color: var(--purple-deep); letter-spacing: -.01em; }
+  .sec-head { max-width: 640px; margin-bottom: clamp(40px, 6vw, 64px); }
+  .sec-head p { margin-top: 16px; color: var(--ink-soft); font-size: 17px; }
+
+  /* Features */
+  .feat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+  .feat {
+    background: var(--white); border: 1px solid var(--line); border-radius: 22px;
+    padding: 30px 28px;
+    transition: transform .35s cubic-bezier(.22,.61,.36,1), box-shadow .35s, border-color .35s;
+  }
+  .feat:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(61,46,80,.12); border-color: rgba(149,117,181,.4); }
+  .feat-icon {
+    width: 52px; height: 52px; border-radius: 15px; display: grid; place-items: center;
+    font-size: 24px; margin-bottom: 18px;
+    background: linear-gradient(135deg, rgba(107,79,138,.12), rgba(149,117,181,.2));
+  }
+  .feat h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; letter-spacing: -.01em; }
+  .feat p { font-size: 14.5px; color: var(--ink-soft); }
+
+  /* Deep-dive band */
+  .band {
+    background: linear-gradient(150deg, var(--purple-deep), var(--purple) 65%, #7D63A0);
+    color: #fff; border-radius: clamp(24px, 4vw, 40px);
+    padding: clamp(48px, 7vw, 90px) clamp(24px, 6vw, 80px);
+    position: relative; overflow: hidden;
+  }
+  .band::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(600px 400px at 90% 10%, rgba(181,152,208,.35), transparent 65%);
+    pointer-events: none;
+  }
+  .band-grid { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(36px, 6vw, 80px); align-items: center; }
+  .band h2 { color: #fff; }
+  .band .sec-eyebrow { color: var(--purple-soft); }
+  .band p.lead { margin-top: 18px; font-size: 16.5px; color: rgba(255,255,255,.82); max-width: 48ch; }
+  .band ul { list-style: none; margin-top: 26px; display: flex; flex-direction: column; gap: 16px; }
+  .band li { display: flex; gap: 14px; align-items: flex-start; font-size: 15px; color: rgba(255,255,255,.92); }
+  .band li .chk {
+    flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%;
+    background: rgba(255,255,255,.14); display: grid; place-items: center; font-size: 12px; margin-top: 1px;
+  }
+  .verse-card {
+    position: relative;
+    background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16);
+    border-radius: 24px; padding: clamp(28px, 4vw, 44px);
+    backdrop-filter: blur(6px);
+  }
+  .verse-card .q { font-family: var(--serif); font-style: italic; font-size: clamp(21px, 2.4vw, 28px); line-height: 1.4; }
+  .verse-card .r { margin-top: 18px; font-size: 13.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--purple-soft); }
+
+  /* Download CTA */
+  .cta { text-align: center; }
+  .cta .app-icon {
+    width: 96px; height: 96px; border-radius: 24px; margin: 0 auto 28px; display: block;
+    box-shadow: 0 16px 40px rgba(61,46,80,.28);
+  }
+  .cta h2 { margin-bottom: 14px; }
+  .cta p { color: var(--ink-soft); font-size: 17px; max-width: 52ch; margin: 0 auto 36px; }
+  .cta .store-badges { justify-content: center; }
+
+  /* Footer */
+  footer { border-top: 1px solid var(--line); padding: 44px clamp(20px, 6vw, 72px) 52px; background: var(--cream-alt); }
+  .foot { max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between; font-size: 14px; color: var(--ink-soft); }
+  .foot-links { display: flex; gap: 22px; flex-wrap: wrap; }
+  .foot a { text-decoration: none; transition: color .2s; }
+  .foot a:hover { color: var(--purple); }
+  .foot-brand { display: flex; align-items: center; gap: 10px; font-weight: 600; color: var(--ink); }
+  .foot-brand img { width: 28px; height: 28px; border-radius: 7px; }
+
+  /* How it works */
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; counter-reset: step; }
+  .step {
+    position: relative; background: var(--white); border: 1px solid var(--line);
+    border-radius: 22px; padding: 34px 28px 30px; text-align: center;
+    transition: transform .35s cubic-bezier(.22,.61,.36,1), box-shadow .35s;
+  }
+  .step:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(61,46,80,.12); }
+  .step-num {
+    font-family: var(--serif); font-size: 15px; font-weight: 700; color: var(--purple);
+    width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center;
+    background: rgba(107,79,138,.1); border: 1px solid rgba(107,79,138,.22);
+    margin: 0 auto 16px;
+  }
+  .step .s-icon { font-size: 34px; margin-bottom: 14px; }
+  .step h3 { font-size: 17.5px; font-weight: 700; margin-bottom: 8px; }
+  .step p { font-size: 14.5px; color: var(--ink-soft); }
+  @media (max-width: 800px) { .steps { grid-template-columns: 1fr; } }
+
+  /* FAQ */
+  .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+  .faq-item {
+    background: var(--white); border: 1px solid var(--line); border-radius: 16px;
+    overflow: hidden; transition: border-color .25s, box-shadow .25s;
+  }
+  .faq-item[open] { border-color: rgba(149,117,181,.45); box-shadow: 0 10px 28px rgba(61,46,80,.08); }
+  .faq-item summary {
+    list-style: none; cursor: pointer; padding: 18px 22px;
+    font-weight: 600; font-size: 15.5px; display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after {
+    content: '+'; font-size: 22px; font-weight: 400; color: var(--purple-light);
+    transition: transform .3s; flex-shrink: 0; line-height: 1;
+  }
+  .faq-item[open] summary::after { transform: rotate(45deg); }
+  .faq-item .faq-a { padding: 0 22px 20px; font-size: 14.5px; color: var(--ink-soft); }
+
+  /* About */
+  .about {
+    max-width: 680px; margin: 0 auto; text-align: center;
+    background: var(--white); border: 1px solid var(--line); border-radius: 24px;
+    padding: clamp(36px, 5vw, 56px) clamp(24px, 5vw, 56px);
+  }
+  .about p { color: var(--ink-soft); font-size: 15.5px; margin-top: 14px; }
+  .about .about-link {
+    display: inline-flex; align-items: center; gap: 8px; margin-top: 24px;
+    font-weight: 600; font-size: 15px; color: var(--purple); text-decoration: none;
+    border: 1.5px solid rgba(107,79,138,.35); padding: 10px 22px; border-radius: 999px;
+    transition: background .25s, color .25s, transform .25s;
+  }
+  .about .about-link:hover { background: var(--purple); color: #fff; transform: translateY(-2px); }
+
+  @media (max-width: 900px) {
+    .hero-inner { grid-template-columns: 1fr; text-align: center; }
+    .hero-sub { margin-left: auto; margin-right: auto; }
+    .store-badges { justify-content: center; }
+    .hero-phone-wrap { order: 2; margin-top: 12px; }
+    .band-grid { grid-template-columns: 1fr; }
+  }
+</style>
 </head>
 <body>
-<p class="p1"><span class="s1">🕊</span></p>
-<h1 style="margin: 0.0px 0.0px 8.0px 0.0px; text-align: center; font: 36.0px 'Helvetica Neue'; color: #141414; -webkit-text-stroke: #141414"><span class="s1"><b>MyFaithWalk</b></span></h1>
-<p class="p3"><span class="s1">Draw closer to God — one day at a time.</span></p>
-<p class="p4"><span class="s1">MyFaithWalk is your daily companion for devotionals, prayer tracking, journaling, guided breathing, and faith-centered conversations. Available on the App Store.</span></p>
-<h2 style="margin: 0.0px 0.0px 20.0px 0.0px; text-align: center; font: 24.0px 'Helvetica Neue'; color: #141414; -webkit-text-stroke: #141414"><span class="s1">Features</span></h2>
-<p class="p6"><span class="s1">📖</span></p>
-<p class="p7"><span class="s2">Daily Devotionals</span><span class="s1"> — Fresh scripture readings and reflections every day with voice reading.</span></p>
-<p class="p6"><span class="s1">🙏</span></p>
-<p class="p7"><span class="s2">Prayer Tracker</span><span class="s1"> — Organize prayer requests, celebrate answered prayers, and build your testimony.</span></p>
-<p class="p6"><span class="s1">📓</span></p>
-<p class="p7"><span class="s2">Faith Journal</span><span class="s1"> — Track your mood, express gratitude, and reflect on your spiritual journey.</span></p>
-<p class="p6"><span class="s1">🌿</span></p>
-<p class="p7"><span class="s2">Rest &amp; Breathe</span><span class="s1"> — Guided breathing exercises, ambient sounds, and spoken relaxation prompts.</span></p>
-<p class="p6"><span class="s1">💬</span></p>
-<p class="p7"><span class="s2">Chat Companion</span><span class="s1"> — A compassionate, faith-centered AI companion for questions and encouragement.</span></p>
-<h2 style="margin: 0.0px 0.0px 20.0px 0.0px; text-align: center; font: 24.0px 'Helvetica Neue'; color: #141414; -webkit-text-stroke: #141414"><span class="s3">Support</span></h2>
-<p class="p8"><span class="s3">We are here to help! If you have any questions, feedback, or need assistance with MyFaithWalk, please reach out to us.</span></p>
-<p class="p9"><span class="s3"><a href="mailto:YOUREMAIL@gmail.com">f</a>aithwalkapp@gmail.com</span></p>
-<p class="p10"><span class="s3">We typically respond within 24 hours.</span></p>
-<p class="p11"><span class="s1"><a href="file:///privacy">Privacy Policy<span class="s4"></span></a></span></p>
-<p class="p11"><span class="s1"><a href="file:///terms">Terms of Use<span class="s4"></span></a></span></p>
-<p class="p11"><span class="s1">© 2026 MyFaithWalk. All rights reserved.</span></p>
+
+<nav id="nav">
+  <a class="nav-brand" href="#top">
+    <img src="/assets/favicon.png" alt="MyFaithWalk icon" width="34" height="34">
+    MyFaithWalk
+  </a>
+  <div class="nav-links">
+    <a href="#features">Features</a>
+    <a href="#why">Why MyFaithWalk</a>
+    <a href="#faq">FAQ</a>
+    <a href="mailto:faithwalkapp@gmail.com">Support</a>
+    <a class="nav-cta" href="#download">Get the app</a>
+  </div>
+</nav>
+
+<header id="top">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow reveal">🕊 Daily devotional companion</div>
+      <h1 class="reveal d1">Walk with God.<br><em>Every day.</em></h1>
+      <p class="hero-sub reveal d2">Daily devotionals, prayer tracking, faith journaling, and guided rest — one peaceful app to help you draw closer to God, one day at a time.</p>
+      <div class="store-badges reveal d3">
+        <a class="badge" href="https://apps.apple.com/us/app/myfaithwalk/id6759456976" target="_blank" rel="noopener" aria-label="Download on the App Store">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+          <span class="b-txt"><span class="b-top">Download on the</span><br><span class="b-bot">App Store</span></span>
+        </a>
+        <a class="badge" href="https://play.google.com/store/apps/details?id=com.faithwalkapp.faithwalk" target="_blank" rel="noopener" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 1.8c-.3.3-.5.8-.5 1.4v17.6c0 .6.2 1.1.5 1.4l.1.1L13.9 12v-.2L3.7 1.7l-.1.1zm13.8 6.9L14 11.2l3.4 3.4 4-2.3c1.1-.7 1.1-1.7 0-2.4l-4-2.2zM4.8 22.6l9.2-9.2 3.2 3.2-11 6.3c-.5.3-1 .3-1.4-.3zm0-21.2c.4-.6.9-.6 1.4-.3l11 6.3-3.2 3.2-9.2-9.2z"/></svg>
+          <span class="b-txt"><span class="b-top">Get it on</span><br><span class="b-bot">Google Play</span></span>
+        </a>
+      </div>
+      <p class="hero-note reveal d3">Free to download · iPhone, iPad &amp; Android</p>
+    </div>
+
+    <div class="hero-phone-wrap reveal d2">
+      <div class="glow"></div>
+      <div class="phone">
+        <div class="notch"></div>
+        <div class="phone-screen">
+          <div class="ph-header">
+            <div class="ph-greet">Good morning ☀️</div>
+            <div class="ph-title">Today's Devotional</div>
+            <div class="ph-streak">🔥 12-day streak</div>
+          </div>
+          <div class="ph-body">
+            <div class="ph-card">
+              <div class="ph-tag">Verse of the day · Peace</div>
+              <div class="ph-verse">"Peace I leave with you; my peace I give you… Do not let your hearts be troubled."</div>
+              <div class="ph-ref">JOHN 14:27</div>
+            </div>
+            <div class="ph-card ph-row">
+              <div class="ph-dot">🙏</div>
+              <div class="ph-row-txt"><div class="t">Prayer requests</div><div class="s">2 active · 1 answered this week</div></div>
+            </div>
+            <div class="ph-card ph-row">
+              <div class="ph-dot">📓</div>
+              <div class="ph-row-txt"><div class="t">Journal</div><div class="s">How is your heart today?</div></div>
+            </div>
+            <div class="ph-card ph-row">
+              <div class="ph-dot">🌿</div>
+              <div class="ph-row-txt"><div class="t">Rest &amp; Breathe</div><div class="s">3-minute guided calm</div></div>
+            </div>
+          </div>
+          <div class="ph-tabbar">
+            <span class="on">🏠</span><span>🙏</span><span>📓</span><span>🌿</span><span>💬</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow reveal">Everything for your walk</div>
+      <h2 class="reveal d1">A quiet place for your faith, in your pocket</h2>
+      <p class="reveal d2">Five gentle tools that work together to help you stay rooted in scripture and prayer — morning and night.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat reveal">
+        <div class="feat-icon">📖</div>
+        <h3>Daily Devotionals</h3>
+        <p>Fresh scripture readings and reflections every day, with warm voice reading so you can listen on the go. Build a streak and make it a habit.</p>
+      </div>
+      <div class="feat reveal d1">
+        <div class="feat-icon">🙏</div>
+        <h3>Prayer Tracker</h3>
+        <p>Organize prayer requests, mark prayers as answered, and watch your testimony grow — a living record of God's faithfulness.</p>
+      </div>
+      <div class="feat reveal d2">
+        <div class="feat-icon">📓</div>
+        <h3>Faith Journal</h3>
+        <p>Track your mood, express gratitude, and reflect on your spiritual journey with gentle daily prompts.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="feat-icon">🌿</div>
+        <h3>Rest &amp; Breathe</h3>
+        <p>Guided breathing exercises, ambient sounds, and spoken relaxation prompts to quiet your mind and rest in His presence.</p>
+      </div>
+      <div class="feat reveal d1">
+        <div class="feat-icon">💬</div>
+        <h3>Chat Companion</h3>
+        <p>A compassionate, faith-centered companion for questions, encouragement, and scripture — whenever you need it.</p>
+      </div>
+      <div class="feat reveal d2">
+        <div class="feat-icon">⭐</div>
+        <h3>Favorites &amp; Streaks</h3>
+        <p>Save the verses that speak to you, celebrate milestones, and keep your daily walk going with gentle reminders.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow reveal">A simple daily rhythm</div>
+      <h2 class="reveal d1">How it works</h2>
+      <p class="reveal d2">Just a few quiet minutes a day. MyFaithWalk gently guides you through a rhythm you can keep.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num">1</div>
+        <div class="s-icon">📖</div>
+        <h3>Start with the Word</h3>
+        <p>Open your daily devotional each morning — read it or let it be read aloud to you. Keep your streak going day by day.</p>
+      </div>
+      <div class="step reveal d1">
+        <div class="step-num">2</div>
+        <div class="s-icon">🙏</div>
+        <h3>Pray &amp; journal</h3>
+        <p>Bring your requests to God and write what's on your heart. Watch answered prayers become your testimony.</p>
+      </div>
+      <div class="step reveal d2">
+        <div class="step-num">3</div>
+        <div class="s-icon">🌿</div>
+        <h3>Rest &amp; reflect</h3>
+        <p>End the day with guided breathing, ambient sounds, and a moment of stillness in His presence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why" style="padding-top:0">
+  <div class="wrap">
+    <div class="band">
+      <div class="band-grid">
+        <div>
+          <div class="sec-eyebrow reveal">Why MyFaithWalk</div>
+          <h2 class="reveal d1">Built for a calmer, deeper daily walk</h2>
+          <p class="lead reveal d2">No noise, no feeds, no distractions — just you, scripture, and a few minutes of stillness each day.</p>
+          <ul>
+            <li class="reveal"><span class="chk">✓</span> A new devotional every morning, in English and Spanish</li>
+            <li class="reveal d1"><span class="chk">✓</span> Listen to devotionals read aloud with natural voices</li>
+            <li class="reveal d2"><span class="chk">✓</span> Light and dark themes that are easy on the eyes</li>
+            <li class="reveal d3"><span class="chk">✓</span> Your journal and prayers stay private on your device</li>
+          </ul>
+        </div>
+        <div class="verse-card reveal d2">
+          <div class="q">"Your word is a lamp for my feet, a light on my path."</div>
+          <div class="r">Psalm 119:105</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head" style="text-align:center; margin-left:auto; margin-right:auto">
+      <div class="sec-eyebrow reveal">Questions &amp; answers</div>
+      <h2 class="reveal d1">Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item reveal">
+        <summary>Is MyFaithWalk free?</summary>
+        <div class="faq-a">Yes — the app is free to download, and the core of your daily walk is free forever: daily devotionals, the prayer tracker, favorite verses, and journaling. An optional Premium subscription unlocks the full experience.</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>What does Premium include?</summary>
+        <div class="faq-a">Premium unlocks unlimited journal entries, the Faith Chat companion, Rest &amp; Renewal with guided breathing and ambient sounds, devotionals read aloud with natural voices, your full devotional calendar history — and every new feature we add in the future.</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>What languages does the app support?</summary>
+        <div class="faq-a">MyFaithWalk is fully available in English and Spanish, including the daily devotionals.</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Is my journal private?</summary>
+        <div class="faq-a">Yes. Your journal entries and prayer requests are stored privately on your device — they are yours alone.</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>How do I manage or cancel my subscription?</summary>
+        <div class="faq-a">Subscriptions are handled by Apple and Google, so you can manage or cancel anytime in your App Store or Google Play subscription settings — no need to contact us.</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>How can I get help or share feedback?</summary>
+        <div class="faq-a">We'd love to hear from you. Email us at <a href="mailto:faithwalkapp@gmail.com">faithwalkapp@gmail.com</a> — we typically respond within 24 hours.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="about" style="padding-top:0">
+  <div class="wrap">
+    <div class="about reveal">
+      <div class="sec-eyebrow">About the maker</div>
+      <h2 style="font-size:clamp(26px,3vw,36px)">Built with care by Alzhan Group</h2>
+      <p>MyFaithWalk is designed and developed by <strong>Alzhan Group LLC</strong>, an independent studio building thoughtful, well-crafted apps. We believe technology should create space for what matters — not compete for it.</p>
+      <a class="about-link" href="https://alzhangroupllc.com/" target="_blank" rel="noopener">Visit alzhangroupllc.com →</a>
+    </div>
+  </div>
+</section>
+
+<section id="download" class="cta" style="padding-top:0">
+  <div class="wrap">
+    <img class="app-icon reveal" src="/assets/icon-512.png" alt="MyFaithWalk app icon" width="96" height="96">
+    <h2 class="reveal d1">Begin your walk today</h2>
+    <p class="reveal d2">Join others building a daily habit of scripture, prayer, and gratitude. Free to download on iPhone, iPad, and Android.</p>
+    <div class="store-badges reveal d3">
+      <a class="badge" href="https://apps.apple.com/us/app/myfaithwalk/id6759456976" target="_blank" rel="noopener" aria-label="Download on the App Store">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+        <span class="b-txt"><span class="b-top">Download on the</span><br><span class="b-bot">App Store</span></span>
+      </a>
+      <a class="badge" href="https://play.google.com/store/apps/details?id=com.faithwalkapp.faithwalk" target="_blank" rel="noopener" aria-label="Get it on Google Play">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 1.8c-.3.3-.5.8-.5 1.4v17.6c0 .6.2 1.1.5 1.4l.1.1L13.9 12v-.2L3.7 1.7l-.1.1zm13.8 6.9L14 11.2l3.4 3.4 4-2.3c1.1-.7 1.1-1.7 0-2.4l-4-2.2zM4.8 22.6l9.2-9.2 3.2 3.2-11 6.3c-.5.3-1 .3-1.4-.3zm0-21.2c.4-.6.9-.6 1.4-.3l11 6.3-3.2 3.2-9.2-9.2z"/></svg>
+        <span class="b-txt"><span class="b-top">Get it on</span><br><span class="b-bot">Google Play</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot">
+    <div class="foot-brand">
+      <img src="/assets/favicon.png" alt="" width="28" height="28">
+      MyFaithWalk
+    </div>
+    <div class="foot-links">
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Use</a>
+      <a href="mailto:faithwalkapp@gmail.com">faithwalkapp@gmail.com</a>
+    </div>
+    <div>© 2026 MyFaithWalk. All rights reserved.<br>
+    <span style="font-size:13px; color:var(--ink-muted)">Developed by <a href="https://alzhangroupllc.com/" target="_blank" rel="noopener" style="color:var(--purple); font-weight:600">Alzhan Group LLC</a></span></div>
+  </div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const io = new IntersectionObserver((entries) => {
+    for (const e of entries) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    }
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Nav border on scroll
+  const nav = document.getElementById('nav');
+  addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 12), { passive: true });
+</script>
 </body>
 </html>
