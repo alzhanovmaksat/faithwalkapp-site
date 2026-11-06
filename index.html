@@ -357,6 +357,20 @@
     .hero-phone-wrap { order: 2; margin-top: 12px; }
     .band-grid { grid-template-columns: 1fr; }
   }
+
+/* The word-study card. Borrows the app's own register: a tracked accent
+   eyebrow, the transliteration set larger, the Strong's number receding. */
+.word-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.10);
+  border-radius:18px;padding:28px 26px}
+.word-eyebrow{font-size:12px;letter-spacing:2.2px;color:#c4b5fd;margin-bottom:10px}
+.word-term{font-family:Palatino,"Palatino Linotype","Book Antiqua",Georgia,serif;
+  font-style:italic;font-size:34px;line-height:1.1;margin-bottom:4px}
+.word-ref{font-size:13px;letter-spacing:1.2px;opacity:.62;margin-bottom:18px}
+.word-body{font-size:15px;line-height:1.65;opacity:.88;margin:0 0 16px}
+.word-body em{font-style:italic}
+#word .band li em{font-style:italic;opacity:.95}
+.word-cite{font-size:12px;letter-spacing:1px;opacity:.55}
+@media(max-width:860px){.word-term{font-size:28px}}
 </style>
 </head>
 <body>
@@ -368,6 +382,7 @@
   </a>
   <div class="nav-links">
     <a href="#features">Features</a>
+    <a href="#word">The word</a>
     <a href="#why">Why MyFaithWalk</a>
     <a href="#faq">FAQ</a>
     <a href="mailto:faithwalkapp@gmail.com">Support</a>
@@ -379,8 +394,8 @@
   <div class="hero-inner">
     <div>
       <div class="hero-eyebrow reveal">🕊 Daily devotional companion</div>
-      <h1 class="reveal d1">Walk with God.<br><em>Every day.</em></h1>
-      <p class="hero-sub reveal d2">Daily devotionals, prayer tracking, faith journaling, and guided rest — one peaceful app to help you draw closer to God, one day at a time.</p>
+      <h1 class="reveal d1">More than a verse<br><em>on a card.</em></h1>
+      <p class="hero-sub reveal d2">A devotional every day that tells you what the Hebrew or Greek actually says — and gives you the number to look it up yourself. Plus prayer, journalling and guided rest, in one quiet app.</p>
       <div class="store-badges reveal d3">
         <a class="badge" href="https://apps.apple.com/us/app/myfaithwalk/id6759456976" target="_blank" rel="noopener" aria-label="Download on the App Store">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
@@ -437,13 +452,23 @@
     <div class="sec-head">
       <div class="sec-eyebrow reveal">Everything for your walk</div>
       <h2 class="reveal d1">A quiet place for your faith, in your pocket</h2>
-      <p class="reveal d2">Five gentle tools that work together to help you stay rooted in scripture and prayer — morning and night.</p>
+      <p class="reveal d2">Gentle tools that work together to help you stay rooted in scripture and prayer — morning and night.</p>
     </div>
     <div class="feat-grid">
       <div class="feat reveal">
         <div class="feat-icon">📖</div>
         <h3>Daily Devotionals</h3>
-        <p>Fresh scripture readings and reflections every day, with warm voice reading so you can listen on the go. Build a streak and make it a habit.</p>
+        <p>A verse, a reflection that goes past it, and a prayer — every day, in English and Spanish. Read it or have it read aloud. Build a streak and make it a habit.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="feat-icon">📜</div>
+        <h3>Reading Plans</h3>
+        <p>Fifty short plans named for how a week actually feels — for when you're afraid, for when someone is gone, for when you can't stop worrying. A few days each, read at your own pace.</p>
+      </div>
+      <div class="feat reveal d1">
+        <div class="feat-icon">🕯</div>
+        <h3>Bible Stories</h3>
+        <p>The long accounts, told in full rather than quoted in fragments — so the verse you know has the story it came from around it.</p>
       </div>
       <div class="feat reveal d1">
         <div class="feat-icon">🙏</div>
@@ -462,13 +487,42 @@
       </div>
       <div class="feat reveal d1">
         <div class="feat-icon">💬</div>
-        <h3>Chat Companion</h3>
-        <p>A compassionate, faith-centered companion for questions, encouragement, and scripture — whenever you need it.</p>
+        <h3>Ask About This Verse</h3>
+        <p>Read something and want to push on it? Ask from inside the reading — what the original wording says, who it was written to, what it asks of you — and the verse goes with the question.</p>
       </div>
       <div class="feat reveal d2">
         <div class="feat-icon">⭐</div>
         <h3>Favorites &amp; Streaks</h3>
         <p>Save the verses that speak to you, celebrate milestones, and keep your daily walk going with gentle reminders.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="word" style="padding-top:0">
+  <div class="wrap">
+    <div class="band">
+      <div class="band-grid">
+        <div>
+          <div class="sec-eyebrow reveal">What makes it different</div>
+          <h2 class="reveal d1">The word the reflection is standing on</h2>
+          <p class="lead reveal d2">Most devotionals hand you a verse and a feeling. On the days where the original language changes what a verse means, this one names the word it turns on — and gives you the number to look it up under, so you can go and check whether we're right.</p>
+          <ul>
+            <li class="reveal"><span class="chk">✓</span> <span><em>Renew</em> in Isaiah 40:31 is <em>chalaf</em> — to exchange one thing for another, not to top up</span></li>
+            <li class="reveal d1"><span class="chk">✓</span> <span><em>Confidence</em> in Hebrews 11:1 is <em>hypostasis</em> — something that stands under; a foundation</span></li>
+            <li class="reveal d2"><span class="chk">✓</span> <span>Every claim checked against a lexicon before it ships, and cited so you don't have to take our word for it</span></li>
+            <li class="reveal d3"><span class="chk">✓</span> <span>A citation, never a definition — the reflection already tells you what it means</span></li>
+          </ul>
+        </div>
+        <div class="reveal d2">
+          <div class="word-card">
+            <div class="word-eyebrow">HEBREW</div>
+            <div class="word-term">chalaf</div>
+            <div class="word-ref">Strong&rsquo;s H2498</div>
+            <p class="word-body">&ldquo;Renew is gentler than the Hebrew. The verb is <em>chalaf</em>, and what it ordinarily means is to change one thing for another: to substitute, to swap. The promise is not that your strength gets topped up while you hold still; it is that it gets exchanged.&rdquo;</p>
+            <div class="word-cite">Isaiah 40:31 &middot; Day 341</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
